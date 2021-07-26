@@ -16,8 +16,9 @@ author: Sub Dub
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Random jibberish: "https://net.hr"
     - Learn markdown: "https://www.markdowntutorial.com/"
+    - Teams: "https://www.websiteabouteams.com/"
   Author's home: "https://deanattali.com"
 
 # --- Logo --- #
