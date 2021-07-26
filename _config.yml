@@ -15,6 +15,7 @@ author: Sub Dub
 
 navbar-links:
   About Me: "aboutme"
+  Random: "random"
   Resources:
     - Random jibberish: "https://net.hr"
     - Learn markdown: "https://www.markdowntutorial.com/"
