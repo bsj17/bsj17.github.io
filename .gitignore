@@ -11,3 +11,9 @@ ehthumbs.db
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
+
+_config.docker.yml
+Gemfile
+docker-compose.yml
+Gemfile
+Gemfile
