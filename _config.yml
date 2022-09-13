@@ -4,7 +4,7 @@
 # the initial set up you won't need to come back to this file often.
 
 # --- Required options --- #
-incremental: true
+#incremental: true
 # Name of website
 title: IT tech notes
 
@@ -16,11 +16,12 @@ author: Branko Sabadi
 navbar-links:
   Blog: "/"
   About Me: "aboutme"
+  Tags: "tags"
   Resources:
     - Random jibberish: "https://net.hr"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Teams: "https://www.websiteabouteams.com/"
-  test: "https://deanattali.com"
+
 
 # --- Logo --- #
 
