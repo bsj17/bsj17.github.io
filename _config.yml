@@ -42,7 +42,7 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "system33@net.hr"
  # facebook: deanattali
  # github: daattali
   #twitter: daattali
@@ -150,7 +150,7 @@ gtm: "GTM-597RG5L"
 # --- Comments --- #
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+disqus: "disqus_meQ13Km22a"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
