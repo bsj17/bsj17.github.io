@@ -4,7 +4,7 @@
 # the initial set up you won't need to come back to this file often.
 
 # --- Required options --- #
-#incremental: true
+incremental: true
 # Name of website
 title: Yet annother tech blog
 
@@ -21,7 +21,7 @@ navbar-links:
     - Random jibberish: "https://net.hr"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Teams: "https://www.websiteabouteams.com/"
-  Author's home: "https://deanattali.com"
+#  Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
