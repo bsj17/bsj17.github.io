@@ -18,9 +18,8 @@ navbar-links:
   About Me: "aboutme"
   Tags: "tags"
   Resources:
-    - Random jibberish: "https://net.hr"
+    - Teams docs: "https://docs.microsoft.com/en-us/microsoftteams/"
     - Learn markdown: "https://www.markdowntutorial.com/"
-    - Teams: "https://www.websiteabouteams.com/"
 
 
 # --- Logo --- #
