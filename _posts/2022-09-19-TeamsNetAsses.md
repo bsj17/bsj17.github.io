@@ -10,7 +10,7 @@ So, you need to start with multisite network assesment to see what's coming at y
 All looks good, and then you want to import your data in Excel for analysis. Results are showing bit off. 
 
 | Result |Timestamp-UTC | LossRate-%| AverageLatency-Ms |AverageJitter-Ms|Protocol | LocalIP | RemoteIP | ProxyUsed |ReflexiveIP |
-|:------ |:------ |:------|:------|:------|:------|:------|:------|:------|:------|
+|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
 |<span style="color:green">Valid</span> |2022-06-08-08:14:13 | 0|66.93|72.16| UDP|10.0.10.52:50019| 52.114.254.107:3478| False| 31.45.200.124:50019
 |<span style="color:red">invalid</span> |2022-06-07-08:54:26|0|75|69|95|32|UDP|10.0.10.52:50013| 52.114.231.159:3478 (and it's broken...)| False|31.45.200.124:50013
 
