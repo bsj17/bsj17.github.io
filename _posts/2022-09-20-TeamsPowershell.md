@@ -6,7 +6,7 @@ subtitle: Application-based authentication
 tags: [Teams,PowerShell,ModernAuth]
 comments: true
 ---
-New MicrosoftTeams 4.7.1-preview Module was released recently. Microsoft has finally implemented Application-based authentication! This is a great news since we're all turning to ModernAuth and BasicAuth slowly fading away. 
+New MicrosoftTeams 4.7.1-preview PowerShell module was released recently. Microsoft has finally implemented Application-based authentication! This is a great news since we're all turning to ModernAuth and BasicAuth slowly fading away. 
 
 I bet all your ExchangeOnline scripts are already updated to use [App-only authentication](https://learn.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps) for unattended scripts. Right? Well if they are not, make sure you do that unless it's too late since counter is already started.
 
