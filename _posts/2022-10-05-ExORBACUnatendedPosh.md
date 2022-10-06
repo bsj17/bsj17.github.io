@@ -39,11 +39,12 @@ How can I control "**What?**" my principal in unatended script  will be able to 
 
 Well, you can't assign roles in ExO directly for this approach. And only two ExO built-in [roles](https://learn.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#step-5-assign-azure-ad-roles-to-the-application) in Azure AD roles are available. Unfortunatelly, custom AAD roles for ExO are not availiable and roles created in ExO are not visible in AAD. 
 
-But what about scoping "**Where?**" part now becomes whole ExO tenant. That might be fine in some cases where you need to manage whole tenant. But for [paranoid](https://www.youtube.com/watch?v=uk_wUT1CvWM) people, like myself I don't want that some unattended script holds ultimate power and modify all objects on my tenant. Especially if it's some "other" team's responsibility. How do I control it and restrict access to specific scope?
+But what about scoping "**Where?**" part now becomes whole ExO tenant. That might be fine in some cases where you need to manage whole tenant. But for [paranoid](https://www.youtube.com/watch?v=uk_wUT1CvWM) people, like myself I don't want that some unattended script holds ultimate power and modify all objects on my tenant. Especially if it's some "other" team's responsibility. 
 
 ## Conclusion
-Well at this point in time, if you're using app-only authentication you can't. It only works as specified in guide and **scope is org-wide**.
+How do I control it and restrict access to specific scope?. Well at this point in time, if you're using app-only authentication you can't. It only works as specified in guide and **scope is org-wide**.
 
+## Appendix 1
 I ran into excellent article by [Vasil Michev
 ](https://www.michev.info/Blog/Post/4027/more-on-service-principal-permissions-in-exchange-online) where he reveals what's visible behind the curtains in ExO environment. So, one would think that ServicePrincipal if added to the role will actually inherit the role priviliges. However, it looks like you can't "skip" AAD role groups. I tried this and as expected it resulted in error.
 
@@ -64,7 +65,7 @@ role assigned to application 722eae44-xxxx-xxxx-xxxx-ee2932067dd9 isn't supporte
 App-Only Authentication. For more information, see the about_Remote_Troubleshooting Help topic.
 ```
 
-## Appendix
+## Appendix 2
 
 Organizations commonly used role legacy is ApplicationImperonation for various application integrations. Usually, app would need to manage only subset of mailboxes in environment, room resources. Only way forward is turn to MSGraph.
 
