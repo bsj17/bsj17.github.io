@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ExchangeOnline RBAC and PoSh unattended scripts
-subtitle: Azure apps with Exo permissions in general
 tags: [ExchangeOnline,ExO,Powershell,ModernAuth]
 comments: true
 ---
