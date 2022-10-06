@@ -20,7 +20,7 @@ Exchange Role Based Access Control (RBAC) it's quite complex topic and it offers
 ![RBAC](../assets/img/rbac.jpg){: .mx-auto.d-block :}
 
 ### Who?
-Role group membership controls "**Who?**" (admin or end-user) can do. Role group is a collection of Roles.
+Role group membership controls "**Who?**" (admin or end-user) can do. Which roles will be available to account. Basically, role group is a collection of roles.
 ### What?
 Each role consist of set's of PowerShell cmdlets **What?** can account do. Each cmdlet consists of parameters and switches (Yes, this is how deep you go when customizing roles).
 ### Where?
@@ -39,7 +39,7 @@ How can I control "**What?**" my principal in unatended script  will be able to 
 
 Well, you can't assign roles in ExO directly for this approach. And only two ExO built-in [roles](https://learn.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#step-5-assign-azure-ad-roles-to-the-application) in Azure AD roles are available. Unfortunatelly, custom AAD roles for ExO are not supported and roles created in ExO are not visible in AAD. 
 
-But what about scoping "**Where?**" part now becomes whole ExO tenant. That might be fine in some cases where you need to manage whole tenant. But for [paranoid](https://www.youtube.com/watch?v=uk_wUT1CvWM) people, like myself I don't want that some unattended script holds ultimate power and modify all objects on my tenant. Especially if it's some "other" team's responsibility. 
+But what about scoping? "**Where?**" part now becomes ExO tenant level. That might be fine in some cases where you need to manage whole tenant. But for [paranoid](https://www.youtube.com/watch?v=uk_wUT1CvWM) people, like myself I don't want that some unattended script holds ultimate power and modify all objects on my tenant. Especially if it's some "other" team's responsibility. 
 
 ## Conclusion
 How do I control it and restrict access to specific scope?. Well at this point in time, if you're using app-only authentication you can't. It only works as specified in guide and **scope is org-wide**.
