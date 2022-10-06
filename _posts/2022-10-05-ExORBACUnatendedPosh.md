@@ -20,7 +20,7 @@ Exchange Role Based Access Control (RBAC) it's quite complex topic and it offers
 ![RBAC](../assets/img/rbac.jpg){: .mx-auto.d-block :}
 
 ### Who?
-Role group membership controls "**Who?**" (admin or end-user) can do. Which roles will be available to account. Basically, role group is a collection of roles.
+Role group membership controls "**Who?**" (admin or end-user) has access to roles allocated in role group. Basically, role group is a collection of roles.
 ### What?
 Each role consist of set's of PowerShell cmdlets **What?** can account do. Each cmdlet consists of parameters and switches (Yes, this is how deep you go when customizing roles).
 ### Where?
