@@ -24,7 +24,7 @@ Role group membership controls "**Who?**" (admin or end-user) has access to role
 ### What?
 Each role consist of set's of PowerShell cmdlets **What?** can account do. Each cmdlet consists of parameters and switches (Yes, this is how deep you go when customizing roles).
 ### Where?
-Management role scopes define targets "**Where**?" cmdlets can be used. 
+Management role scopes define targets "**Where**?" cmdlets can be used. In other words what role group member can read and modify. 
 
 ### Role assigment
 I wanted to skip this but still... In case you're wondering what Role assigment is. It's a "glue" that links role, role group and scope. It's generated when you add role to a role group and scope.
