@@ -10,7 +10,7 @@ So, it happened. Microsoft had finally started to shutdown basic auth on M365 te
 Prior killing basic auth it was needed to update unattended PowerShell scripts to use app-only authentication. Microsoft did made this possible by introducing new [ExO PoSh module](https://learn.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps). It's a streight forward process, but you need to create [Azure app](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals) to use it. 
 
 ## Scope(s) and roles
-This were I come to the point of writing this blog post. If you're using this approach not being mindful of **scope**, application/script that is going to be using this service principal will have access on ExO tenant level.
+This were I come to the point of writing this blog post. If you're app-only auth approach not being mindful of **scope**, application/script that is going to be using this service principal will have access on ExO tenant level.
 
 **Why should I care?**  Well, it's a matter of least privilage principle. You want to give application only access that is needs and write scope on objects that it needs to mange. 
 
