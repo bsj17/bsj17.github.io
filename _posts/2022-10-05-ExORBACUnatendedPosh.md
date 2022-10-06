@@ -22,7 +22,7 @@ Exchange Role Based Access Control (RBAC) it's quite complex topic and it offers
 ### Who?
 Role group membership controls "**Who?**" (admin or end-user) has access to roles allocated in role group. Basically, role group is a collection of roles.
 ### What?
-Each role consist of set's of PowerShell cmdlets **What?** can account do. Each cmdlet consists of parameters and switches (Yes, this is how deep you go when customizing roles).
+Each role consist of sets of PowerShell cmdlets. **What?** cmdlets are available to account. Each cmdlet consists of parameters and switches (Yes, this is how deep you go when customizing roles).
 ### Where?
 Management role scopes define targets "**Where**?" cmdlets can be used. In other words what role group member can read and modify. 
 
@@ -37,7 +37,7 @@ Since basic auth is turned off and interactive logon is no good for unatended sc
 
 How can I control "**What?**" my principal in unatended script  will be able to change/modify?
 
-Well, you can't assign roles in ExO directly for this approach. And only two ExO built-in [roles](https://learn.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#step-5-assign-azure-ad-roles-to-the-application) in Azure AD roles are available. Unfortunatelly, custom AAD roles for ExO are not supported and roles created in ExO are not visible in AAD. 
+Well, you can't assign roles in ExO directly for this approach and only two ExO built-in [roles](https://learn.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#step-5-assign-azure-ad-roles-to-the-application) roles are available in Azure AD. Unfortunatelly, custom AAD roles for ExO are not supported and roles created in ExO are not visible in AAD. When it comes app-only auth you can choose "Exchange administrator" or "Exchange recipient administrator". It really puts unwanted constraint on otherwise really flexible Exchange RBAC model.
 
 But what about scoping? "**Where?**" part now becomes ExO tenant level. That might be fine in some cases where you need to manage whole tenant. But for [paranoid](https://www.youtube.com/watch?v=uk_wUT1CvWM) people, like myself I don't want that some unattended script holds ultimate power and modify all objects on my tenant. Especially if it's some "other" team's responsibility. 
 
