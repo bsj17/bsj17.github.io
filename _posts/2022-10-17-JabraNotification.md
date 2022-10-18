@@ -5,7 +5,7 @@ date: 2022-10-17 16:03 +0200
 tags: [HeadPhones,Teams,PowerShell]
 comments: true
 ---
-Tt happen again... I was in meeting and suddenly all was so quiet. It's either my headphones died or everyone else is not talking. You guess it... I really like my Jabra Evolve 65. I don't understand why Jabra direct software does not have feature to give you some visual warning when your battery is about to die. It gives you warning earlier (I think about 30%) and then you forget about it until it's too late.
+It happen again... I was in meeting and suddenly all was so quiet. It's either my headphones died or everyone else is not talking. You guess it... I really like my Jabra Evolve 65. I don't understand why Jabra direct software does not have feature to give you some visual warning when your battery is about to die. It gives you warning earlier (I think about 30%) and then you forget about it until it's too late.
 
 I went digging to check if there was a way to get to batery info somehow vi WMI however no luck. Documentation says nothing about it.
 
