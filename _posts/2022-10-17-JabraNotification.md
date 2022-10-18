@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jabra evolve toast notifications
+title: Jabra Evolve toast notifications
 date: 2022-10-17 16:03 +0200
 tags: [HeadPhones,Teams,PowerShell]
 comments: true
