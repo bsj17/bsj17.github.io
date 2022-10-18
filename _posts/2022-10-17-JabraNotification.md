@@ -14,6 +14,7 @@ Trying to get some cli commands by running jabra-direct.exe did actualy revealed
 
 Second clue  was exactly thing I needed
  ![jabraCli2](../assets/img/jabra2.png){: .mx-auto.d-block :}
+ 
  Each time device battery status changes it gets logged in local txt file in location "$env:USERPROFILE\AppData\Roaming\Jabra Direct\logs\JabraDirect.main.log".
 
  Now when I know where the data is I will need to take exactly what I need. With little help of regex and https://regex101.com/ finaly matching string was complete.
@@ -25,7 +26,7 @@ I made small script that will do following:
 
 ![toast](../assets/img/jabra4.png)
 
-If you want to enable notification youself open powershell and paste this in prompt (assuming you're using Windows 10 or later):
+If you want to enable notifications yourself open PowerShell and paste this in prompt (assuming you're using Windows 10 or later):
 
 ```powershell
 invoke-expression ((New-Object System.Net.WebClient).DownloadString('https://gist.github.com/bsj17/2dcc043b8678f18f9b8b45eebe2e4f49/raw'))
