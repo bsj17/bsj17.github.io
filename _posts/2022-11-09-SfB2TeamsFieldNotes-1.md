@@ -62,7 +62,8 @@ $failed =@(); $ok = @()
 
 foreach ($user in $users) {
     try {
-        $ok += Get-CsUser -Identity $user.trim() -ErrorAction stop | select userprincipalname,HostingProvider,lineuri,name,RegistrarPool,@{l="DC";e={Get-DCFromDN -dn $_.DistinguishedName}}
+        $ok += Get-CsUser -Identity $user.trim() -ErrorAction stop | select userprincipalname,HostingProvider,lineuri,name,RegistrarPool, `
+        @{l="DC";e={Get-DCFromDN -dn $_. DistinguishedName}} #Using custom expression to ad DC property to object
     }
     catch {
         Write-Host "Failed: " + $user.trim()
@@ -79,7 +80,8 @@ $migrated=@(); $migfailed=@()
 foreach ($u in $migrationbatch){
     try {
         $url="https://admin2a.online.lync.com/HostedMigration/hostedmigrationService.svc"
-        Move-CsUser -Identity $u.UserPrincipalName -Target sipfed.online.lync.com -Credential $cred -HostedMigrationOverrideUrl $url -Confirm:$false -Verbose -ErrorAction Stop -DomainController $u.dc
+        Move-CsUser -Identity $u.UserPrincipalName -Target sipfed.online.lync.com -Credential $cred -HostedMigrationOverrideUrl $url -Confirm:$false -Verbose -ErrorAction Stop `
+        -DomainController $u.dc #Consuming newly created custom property
         $migrated += $u.UserPrincipalName  
     }
     catch {
