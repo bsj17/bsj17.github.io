@@ -23,17 +23,17 @@ Depending on how input batch migration schedule looks like, one could do the gro
 ## Solution
 As always starting small and building-up toward solution is way to go. Check output of Get-CsUser in SfB PoSh console to see if there's something useful already built-in. Bunch of attributes but nothing that would be usable, only DistinguishedName looks as it could yeld some result. 
 
-If you're new to AD and LDAP you may wonder what DistinguishedName (or DN for short) is. If you want to know more check [this](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names) out. For now let's just look at it as a string telling us location of object I.E. "CN=jdoe,OU=HappyUsers,DC=hu,DC=contoso,DC=intra". This is interesting because AD domain DNS name can be constructed by taking DC (domainComponent) segment and concatenate it together and then query ADDS to get list of writable DC's.
+If you're new to AD and LDAP you may wonder what DistinguishedName (or DN for short) is. To find out more check [docs](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names). For now let's just look at it as a string telling us location of object I.E. "CN=jdoe,OU=HappyUsers,DC=hu,DC=contoso,DC=intra". This is interesting because AD domain DNS name can be constructed by taking DC (domainComponent) segment and concatenate it together and then query ADDS to get list of writable DC's.
 
 With a help of RegularExpressions and https://regex101.com/ for visualization let's extract domain name from our strings. For example "DC=hu,DC=contoso,DC=intra".
 ![regex](../assets/img/2022-11-09-SfB2TeamsFieldNotes-1\regex.png){: .mx-auto.d-block :}
 
-And then remove "DC=" and replace comma with dot and domain name is here. 
+And then remove "DC=", replace comma with dot and domain name is here.
 With that we can get FQDN of PDC used later on in script. 
 ```powershell
 (Get-ADDomainController -DomainName hu.contoso.intra -Service "PrimaryDC" -Discover).HostName
 ```
-Assembling helper function:
+#### Assembling helper function:
 ```powershell
 function Get-DCFromDN ($dn)
 {
