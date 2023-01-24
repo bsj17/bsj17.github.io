@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rural area LTE coverage challeges 
-tags: [Mikrotik,LTE,]
+tags: [Mikrotik,LTE]
 date: 2023-01-03 17:09:57 +0200
 comments: true
 ---
@@ -29,7 +29,7 @@ I had the mounting pole and wiring set-up from previous installation so it was e
 
 ![install1](..\assets\img\2023-01-04\install1.jpg){:width="50%" ; .mx-auto.d-block :}
 
-Since LHG does not have WiFI I took my spare routerboard with AP to find best position.
+Since LHG does not have WiFi I took my spare routerboard with AP to connect from mobile app and find best position for antenna.
 
 ![install2](..\assets\img\2023-01-04\install2.jpg){:width="50%" ; .mx-auto.d-block :}
 Signal was very poor as always but at least quality was good.
