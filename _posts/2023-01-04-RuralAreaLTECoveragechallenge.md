@@ -13,7 +13,6 @@ Due to messed-up geography my house has very poor LTE coverage. With mobile phon
 During years I tested lot of gear antennas, LTE routers and stuff. Most of it was performing bad, or worse then bad. But at some point [Mikrotik LTE-SXT](https://mikrotik.com/product/sxt_lte_kit) router become available so I decided to give it a go.
 
 ![SXTLTE](https://i.mt.lv/cdn/rb_images/1884_m.png)
-
 ![SXTLTE](https://i.mt.lv/cdn/rb_images/1885_m.png)
 
 It was a success! With poor reception I was able to get around 25Mbps download and 10-15Mbps upload (depending on a weather condition). Router was working reliably for years until recently, it started to freeze for some reason (updating modem firmware or any other update did not help) and when it was working reception had drastically deteriorated. Also, neighbors pines had drastically grown bigger and made reception even worse.
@@ -22,7 +21,6 @@ It was a success! With poor reception I was able to get around 25Mbps download a
  Drastic times require drastic measures. I decided to do a upgrade and replace existing router with [MikroTik RouterBOARD LHG LTE kit](https://mikrotik.com/product/lhg_lte_kit)
 
 ![lhg_lte_kit](https://i.mt.lv/cdn/rb_images/1662_m.png)
-
 ![lhg_lte_kit](https://i.mt.lv/cdn/rb_images/1665_m.png)
 
 I had the mounting pole and wiring set-up from previous installation so it was easy to replace it.
@@ -39,6 +37,6 @@ Oh boy, this was a dramatic step up in performance. With significantly bigger an
 
 ![speedtest](..\assets\img\2023-01-04\speedtest.png){:width="50%" ; .mx-auto.d-block :}
 
-Now I can work happily again from my forgotten village again if I have to.
+Now I can work happily from my forgotten village again if I have to.
 
 Thank you for reading and I hope this post can help if you find yourself in similar situation.
