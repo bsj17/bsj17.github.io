@@ -22,10 +22,6 @@ First you need to know a little about of:
 - [How is it used?](https://dmarc.org/wiki/FAQ#Why_is_DMARC_important.3F:~:text=they%20are%20received.-,How%20does%20DMARC%20work%2C%20briefly%2C%20and%20in%20non%2Dtechnical%20terms%3F,-A%20DMARC%20policy)
 - [What problem is it solving?](https://dmarc.org/wiki/FAQ#Why_is_DMARC_important.3F:~:text=fail%20DMARC%20evaluation.-,Why%20is%20DMARC%20needed%3F,-End%20users%20and)
 
-In very simplified manner using logical operators, DMARC is doing following check:
-
-"(Header-from domain == Envelope-From domain) && (Envelope from domain == DKIM domain) "||" (Envelope-From domain == SPF domain) = DMARC Pass "
-
 ![DMARC flow ](https://blog.returnpath.com/wp-content/uploads/2015/07/Capture1-1.jpg)
 
 For each received email message DMARC policy is evaluated and aggregate report is being sent periodically to domain owner according specified RUA address in DMARC DNS record. <br>
