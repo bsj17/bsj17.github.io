@@ -8,7 +8,7 @@ comments: true
 
 ## Intro
 
-Recently, during late March of 2023. M365 tenants started to sending DMARC reports according to Microsoft 365 Roadmap ID 109535. More details can be found at [MC516348 — DMARC aggregate reports for enterprise](https://techcommunity.microsoft.com/t5/public-sector-blog/march-2023-microsoft-365-us-public-sector-roadmap-newsletter/ba-p/3770486#:~:text=MC516348%20%E2%80%94%20DMARC%20aggregate%20reports%20for%20enterprise).
+During late March of 2023. M365 tenants started to sending DMARC reports according to Microsoft 365 Roadmap ID 109535. More details can be found at [MC516348 — DMARC aggregate reports for enterprise](https://techcommunity.microsoft.com/t5/public-sector-blog/march-2023-microsoft-365-us-public-sector-roadmap-newsletter/ba-p/3770486#:~:text=MC516348%20%E2%80%94%20DMARC%20aggregate%20reports%20for%20enterprise).
 
 Kudos to Microsoft for doing so and making an internet safer place.
 ## Devil is in details
