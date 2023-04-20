@@ -12,9 +12,20 @@ During late March of 2023. M365 tenants started to sending DMARC reports accordi
 
 Kudos to Microsoft for doing so and making an internet safer place.
 ## Devil is in details
-If you read details of article there is a catch:
-"*DMARC reports are only sent to domains whose MX is pointed to O365. In order to obtain DMARC aggregate reports for your domain, it must have a valid DMARC record that includes a valid RUA email address.*"
+If you read details of article there is a catch:<br>
+<em>"DMARC reports are only sent to domains whose MX is pointed to O365. In order to obtain DMARC aggregate reports for your domain, it must have a valid DMARC record that includes a valid RUA email address."<em>
 
+<br>** Update **
+I received a valuable feedback and article needs to be updated.
+
+In the message centar there is an [update](https://portal.office.com/adminportal/home?ref=MessageCenter/:/messages/MC516348)
+giving more details:<br>
+
+<em>"For example, you have mailboxes with the recipient domain contoso.com, which domain has it's MX record pointed directly to Office 365. (contoso-com.mail.protection.outlook.com). In this scenario Office 365 will automatically send DMARC aggregate reports to all email sender domain owners which has a valid RUA address defined in their domain DMARC record. 
+
+If contoso.com MX record pointed to a different email security solution in front of Office 365, Office 365 will not send DMARC aggregate reports to any sender domains RUA address configured in their DMARC record as the information we see about the sending infrastructure is likely to have been affected by the complex mail flow routing."<em>
+
+This is a bit contradictive to first announcement which essentially says "M365 will not sending DMARC report to M365 tenant with 3rd party mail GW"
 ## But what does this mean in real life?
 
 First you need to know a little about of:
@@ -53,11 +64,12 @@ Receivers (are also senders) such as Yahoo, Gmail, Outlook.com and M365 tenants.
 ### M365 Sending DMARC report
 ![M365 Sending DMARC report](../assets/img/2023-04-19-M365DMARCChange/DMARC-M365Sending.png)
 
-### M365 not sending DMARC report to M365 tenant with 3rd party mail GW
-![M365 Not sending DMARC report](../assets/img/2023-04-19-M365DMARCChange/DMARC-M365NotSending.png)
-
+** Update **
+### M365 not sending DMARC report if 3rd party mail GW is in-front of EOP
+![M365 Not sending DMARC report](../assets/img/2023-04-19-M365DMARCChange/DMARC-3rdParty-M365NotSending.png)
 
 ## Conclusion
 
-Even though it's a great improvement that M365 as world biggest mail provider is finally sending DMARC reports it does not show a complete picture. Is it Microsoft punishing their M365 tenants for using 3rd party mail gateways (Proofpoint, Cisco ESA...)? Is there something else behind it? Please comment if you know why is this so.
+It's a great improvement that M365 as world biggest mail provider is finally sending DMARC reports. So, it's up to the 3rd party mail gateway vendors to close the gap and start sending DMARC reports from their side (Yes, ProofPoint I mean you). 
+
 Thanks for reading!

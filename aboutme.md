@@ -11,5 +11,5 @@ I also like developing custom solutions wrapped around PowerShell. Quest for kno
 
 
 #### You can reach out to me on
-[Twitter](https://twitter.com/branqic) and [LinkedIn](https://www.linkedin.com/in/branko-sabadi-8187b943/])
+[Twitter](https://twitter.com/branqic) and [LinkedIn](https://www.linkedin.com/in/branko-sabadi-8187b943/)
 
