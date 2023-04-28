@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Disablement of SfB hybrid and DNS wildcard 
-tags: [SfB,Teams,SfB Hybrid,DNS]
+title: Disablement of SfB hybrid and DNS wildcard record
+tags: [SfB,Teams,SfBHybrid,DNS]
 date: 2023-04-28 14:09:57 +0200
 comments: true
 ---
 
-I wanted to log situation I encountered during latest SfB decommission and upgrade to Teams-Only. This blog post falls into category "Every day you learn something new"
+Just to log situation I encountered during latest SfB decommission and upgrade to Teams-Only. This blog post falls into category "Every day you learn something new"
 
 Before switching Teams tenant coexistence mode to Teams-Only, It's important that DNS records that were originally pointing to on-premises SfB infrastructure are changed and all SIP domains within tenant point to SfB online infra.
 
-This is targeted state:
+This is targeted state for each SfB SIP domain:
 ![SfB DNS records](../assets/img/2023-04-28-DisableSfBHybrid/SfBDNSrecords.png)
 
 I extracted list of all SIP domains and did a quick check to get current records and their values.
